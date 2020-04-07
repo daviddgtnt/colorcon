@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to David's Fort</title>
+  <style>
+    body {
+      text-align: center;
+      background: #ffffff;
+      font-family: "Roboto", sans-serif
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>David's Fort</h1><br><br><br><br><br><br>
+  <h3>Color Controller</h3>
+  <button onclick="show()">Show Color Controls</button>
+  <div id="colorcon"><br><br>
+    <input type="text" id="colorin"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="document.body.style.background = document.getElementById('colorin').value;">Set Color</button>
+  </div>
+  <script>
+    function show() {
+      var x = document.getElementById("colorcon");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    show();
+  </script>
+</body>
+
+</html>
